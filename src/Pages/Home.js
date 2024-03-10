@@ -11,9 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Navigation,Pagination } from "swiper/modules";
 import "../index.css";
-import ContactUsForm from "../Components/form";
-import AboutUs from "../Components/aboutUs";
-import Topdoctors from "../Components/top_doctors";
+
 const Home = () => {
   const SlideRef = useRef();
   return (
@@ -71,10 +69,7 @@ const Home = () => {
 
       <Appoint />
       <Consult />
-      <Topdoctors/>
       
-      <AboutUs/>
-      <ContactUsForm/>
     </div>
   );
 };

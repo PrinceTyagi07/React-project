@@ -2,7 +2,8 @@ import React from 'react'
 
 const Consult = () => {
     return (
-        <div className='mt-20 mb-5 w-11/12 max-w-maxContent flex flex-col justify-center
+        <div className='mt-20 mb-5
+         w-11/12 max-w-maxContent flex flex-col justify-center
     items-center  font-mont'>
             <div><h1 className='  text-2xl  font-semibold '>Consult top doctors online for any health concern</h1>
 
