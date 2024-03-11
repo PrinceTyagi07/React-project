@@ -68,7 +68,7 @@ const Topdoctors = () => {
       </div>
       <div className="flex space-x-32 rounded-lg shadow-2xl shadow-black  my-10 mb-16 w-full  p-2 ">
         <div className="image">
-          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/1e/e7/af/1ee7af7a0dd863abae0af4a109422b39.jpg" alt="" />
+          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/94/3c/89/943c89e93509e7eb042f8f16d0101f2b.jpg" alt="" />
         </div>
         <div className=" items-center flex flex-col w-[30%] ">
           <h1 className="font-semibold text-xl">Top Doctors</h1>
@@ -81,7 +81,7 @@ const Topdoctors = () => {
       </div>
       <div className="flex space-x-32 rounded-lg shadow-2xl shadow-black  my-10 mb-16 w-full  p-2 ">
         <div className="image">
-          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/1e/e7/af/1ee7af7a0dd863abae0af4a109422b39.jpg" alt="" />
+          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/f3/0d/2b/f30d2bd6980a6297f54d6b695414b323.jpg" alt="" />
         </div>
         <div className=" items-center flex flex-col w-[30%] ">
           <h1 className="font-semibold text-xl">Top Doctors</h1>
