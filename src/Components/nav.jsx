@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { NavbarLinks } from "../Data/navbar-links";
 import logo from "../Data/logo.jpg"
 import { IoPerson } from "react-icons/io5";
@@ -15,10 +15,8 @@ const Nav = () => {
     transition: "right 0.6s",
     zIndex: "10",
   };
-  const handleclick=()=>{
-    
-  <Login/>
-  };
+  
+  const navigate = useNavigate();
   return (
     <div className="shadow-md" style={{ ...navbarStyles }}>
       <div className=" overflow-hidden text-black  mx-auto ">
@@ -71,9 +69,12 @@ const Nav = () => {
                   </Link>
                 </li>
               ))}
-              <button className=" h-10 w-40 p-2 flex gap-x-2 items-baseline mt-1 bg-gradient-to-r from-richblue-1  to-richblue-2 text-white ">
+              <button onClick={()=>{
+                navigate("/login")
+              }}
+              className=" h-10 w-40 p-2 flex gap-x-2 items-baseline mt-1 bg-gradient-to-r from-richblue-1  to-richblue-2 text-white ">
               <IoPerson />
-              <p onclick ={handleclick} >Login/SignUp <Login/></p>
+              <p  >Login/SignUp <Login/></p>
               
               </button>
             </ul>
