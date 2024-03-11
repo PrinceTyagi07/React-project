@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Consult = () => {
+    const navigate = useNavigate();
     return (
         <div className='mt-20 mb-5
          w-11/12 max-w-maxContent flex flex-col justify-center
@@ -28,8 +30,8 @@ const Consult = () => {
                         </svg>
                         <div className='font-bold p-2'>Proctology
                         </div>
-                        <p className='border p-2'>Consult Now</p>
-                    </div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
+
 
                     <div className='shadow-xl shadow-richblack-200  p-3 mx-10'>
                         <svg width="106" height="79" viewBox="0 0 106 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +44,8 @@ const Consult = () => {
                             </defs>
                         </svg>
                         <div className='font-bold p-2'>Laparscopy</div>
-                        <p className='border p-2'>Consult Now</p>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button>
+
                     </div>
                     <div className='shadow-xl shadow-richblack-200 p-3  mx-10'>
                         <svg width="99" height="82" viewBox="0 0 99 82" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,21 +69,24 @@ const Consult = () => {
                         </svg>
                         <div className='font-bold p-2'>Brain
                         </div>
-                        <p className='border p-2'>Consult Now</p></div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
+
                     <div className=' shadow-xl shadow-richblack-200 p-3 mx-10'>
-                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.7695 0C17.6383 0 11.5082 2.52181 6.90485 7.55915C-1.19295 16.4203 -2.16711 30.4059 3.9771 40.5038H18.0006L26.8554 13.3104C26.9363 13.0573 27.164 12.8793 27.4292 12.8647C27.7426 12.8463 28.0232 13.0572 28.0933 13.3632L34.4045 40.5038H40.3215H46.7508C46.9979 40.5042 47.2229 40.6461 47.3295 40.8691L54.438 55.6786L60.9438 40.888C61.0463 40.6545 61.2776 40.5038 61.5326 40.5038H75.7168C81.9663 30.4022 81.5295 16.4311 73.4218 7.55915C64.354 -2.36354 49.4101 -2.40564 40.1633 7.21766C35.6108 2.47959 29.7158 0 23.7695 0ZM27.3626 15.9017L19.0778 41.3437C18.9923 41.6094 18.7457 41.7907 18.4664 41.7906H4.81827C5.45301 42.7055 6.14457 43.5864 6.90485 44.4183C6.90651 44.42 6.90819 44.4217 6.90987 44.4233L39.6888 79.7785C39.7494 79.8441 39.8229 79.8963 39.9048 79.9319C39.9867 79.9675 40.0752 79.9856 40.1644 79.9852C40.2537 79.9847 40.342 79.9656 40.4235 79.9292C40.505 79.8927 40.578 79.8397 40.6379 79.7734L72.7765 44.4183C73.5333 43.5858 74.2263 42.7043 74.8669 41.7894H61.9544L55.0506 57.4764C54.8292 57.9782 54.1211 57.9906 53.883 57.4965L46.3427 41.7906H40.3215H33.8923C33.593 41.7906 33.3332 41.5838 33.2658 41.2922L27.3626 15.9017Z" fill="url(#paint0_linear_26_55)"/>
-<defs>
-<linearGradient id="paint0_linear_26_55" x1="40.0011" y1="-4.47446e-08" x2="38.5" y2="100.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00FFFF"/>
-<stop offset="1" stop-color="#00248F"/>
-</linearGradient>
-</defs>
-</svg>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.7695 0C17.6383 0 11.5082 2.52181 6.90485 7.55915C-1.19295 16.4203 -2.16711 30.4059 3.9771 40.5038H18.0006L26.8554 13.3104C26.9363 13.0573 27.164 12.8793 27.4292 12.8647C27.7426 12.8463 28.0232 13.0572 28.0933 13.3632L34.4045 40.5038H40.3215H46.7508C46.9979 40.5042 47.2229 40.6461 47.3295 40.8691L54.438 55.6786L60.9438 40.888C61.0463 40.6545 61.2776 40.5038 61.5326 40.5038H75.7168C81.9663 30.4022 81.5295 16.4311 73.4218 7.55915C64.354 -2.36354 49.4101 -2.40564 40.1633 7.21766C35.6108 2.47959 29.7158 0 23.7695 0ZM27.3626 15.9017L19.0778 41.3437C18.9923 41.6094 18.7457 41.7907 18.4664 41.7906H4.81827C5.45301 42.7055 6.14457 43.5864 6.90485 44.4183C6.90651 44.42 6.90819 44.4217 6.90987 44.4233L39.6888 79.7785C39.7494 79.8441 39.8229 79.8963 39.9048 79.9319C39.9867 79.9675 40.0752 79.9856 40.1644 79.9852C40.2537 79.9847 40.342 79.9656 40.4235 79.9292C40.505 79.8927 40.578 79.8397 40.6379 79.7734L72.7765 44.4183C73.5333 43.5858 74.2263 42.7043 74.8669 41.7894H61.9544L55.0506 57.4764C54.8292 57.9782 54.1211 57.9906 53.883 57.4965L46.3427 41.7906H40.3215H33.8923C33.593 41.7906 33.3332 41.5838 33.2658 41.2922L27.3626 15.9017Z" fill="url(#paint0_linear_26_55)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_26_55" x1="40.0011" y1="-4.47446e-08" x2="38.5" y2="100.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00FFFF" />
+                                    <stop offset="1" stop-color="#00248F" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
 
                         <div className='font-bold p-2'>Heart
                         </div>
-                        <p className='border p-2'>Consult Now</p></div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
+
+                        </div>
                 </div>
                 <div className=' mt-10 flex justify-between '>
                     <div className='   shadow-xl shadow-richblack-200 p-3 mx-10'>
@@ -100,8 +106,8 @@ const Consult = () => {
                         </svg>
                         <div className='font-bold'>Proctology
                         </div>
-                        <p className='border p-2 font-semibold'>Consult Now</p>
-                    </div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
+
 
                     <div className='  p-3 mx-10  shadow-xl shadow-richblack-200'>
                         <svg width="106" height="79" viewBox="0 0 106 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,8 +120,8 @@ const Consult = () => {
                             </defs>
                         </svg>
                         <div className='font-bold'>Laparscopy</div>
-                        <p className='border p-2 font-semibold'>Consult Now</p>
-                    </div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
+
                     <div className=' p-3  mx-10  shadow-xl shadow-richblack-200'>
                         <svg width="99" height="82" viewBox="0 0 99 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M54.0117 62.1739C56.1401 62.5367 60.4693 62.9962 64.3631 61.7144C77.1451 57.5061 82.4417 59.6828 84.1226 60.8074C85.0053 61.4 85.5737 62.1255 85.7672 62.8874L85.8518 63.4315C85.9002 63.7218 86.8797 70.6025 79.2855 72.2592C75.041 73.1783 68.523 73.5773 63.5529 72.3922C59.1874 71.3523 57.1559 69.4053 57.5186 66.624C57.6396 65.6808 57.1559 64.7738 56.3094 64.3627C55.2936 63.8669 54.2173 63.1292 54.0117 62.1739Z" fill="url(#paint0_linear_26_64)" />
@@ -138,25 +144,27 @@ const Consult = () => {
                         </svg>
                         <div className='font-bold p-2'>Brain
                         </div>
-                        <p className=' border p-2 font-semibold'>Consult Now</p></div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
+
                     <div className=' p-3 mx-10  shadow-xl shadow-richblack-200'>
-                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.7695 0C17.6383 0 11.5082 2.52181 6.90485 7.55915C-1.19295 16.4203 -2.16711 30.4059 3.9771 40.5038H18.0006L26.8554 13.3104C26.9363 13.0573 27.164 12.8793 27.4292 12.8647C27.7426 12.8463 28.0232 13.0572 28.0933 13.3632L34.4045 40.5038H40.3215H46.7508C46.9979 40.5042 47.2229 40.6461 47.3295 40.8691L54.438 55.6786L60.9438 40.888C61.0463 40.6545 61.2776 40.5038 61.5326 40.5038H75.7168C81.9663 30.4022 81.5295 16.4311 73.4218 7.55915C64.354 -2.36354 49.4101 -2.40564 40.1633 7.21766C35.6108 2.47959 29.7158 0 23.7695 0ZM27.3626 15.9017L19.0778 41.3437C18.9923 41.6094 18.7457 41.7907 18.4664 41.7906H4.81827C5.45301 42.7055 6.14457 43.5864 6.90485 44.4183C6.90651 44.42 6.90819 44.4217 6.90987 44.4233L39.6888 79.7785C39.7494 79.8441 39.8229 79.8963 39.9048 79.9319C39.9867 79.9675 40.0752 79.9856 40.1644 79.9852C40.2537 79.9847 40.342 79.9656 40.4235 79.9292C40.505 79.8927 40.578 79.8397 40.6379 79.7734L72.7765 44.4183C73.5333 43.5858 74.2263 42.7043 74.8669 41.7894H61.9544L55.0506 57.4764C54.8292 57.9782 54.1211 57.9906 53.883 57.4965L46.3427 41.7906H40.3215H33.8923C33.593 41.7906 33.3332 41.5838 33.2658 41.2922L27.3626 15.9017Z" fill="url(#paint0_linear_26_55)"/>
-<defs>
-<linearGradient id="paint0_linear_26_55" x1="40.0011" y1="-4.47446e-08" x2="38.5" y2="100.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00FFFF"/>
-<stop offset="1" stop-color="#00248F"/>
-</linearGradient>
-</defs>
-</svg>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.7695 0C17.6383 0 11.5082 2.52181 6.90485 7.55915C-1.19295 16.4203 -2.16711 30.4059 3.9771 40.5038H18.0006L26.8554 13.3104C26.9363 13.0573 27.164 12.8793 27.4292 12.8647C27.7426 12.8463 28.0232 13.0572 28.0933 13.3632L34.4045 40.5038H40.3215H46.7508C46.9979 40.5042 47.2229 40.6461 47.3295 40.8691L54.438 55.6786L60.9438 40.888C61.0463 40.6545 61.2776 40.5038 61.5326 40.5038H75.7168C81.9663 30.4022 81.5295 16.4311 73.4218 7.55915C64.354 -2.36354 49.4101 -2.40564 40.1633 7.21766C35.6108 2.47959 29.7158 0 23.7695 0ZM27.3626 15.9017L19.0778 41.3437C18.9923 41.6094 18.7457 41.7907 18.4664 41.7906H4.81827C5.45301 42.7055 6.14457 43.5864 6.90485 44.4183C6.90651 44.42 6.90819 44.4217 6.90987 44.4233L39.6888 79.7785C39.7494 79.8441 39.8229 79.8963 39.9048 79.9319C39.9867 79.9675 40.0752 79.9856 40.1644 79.9852C40.2537 79.9847 40.342 79.9656 40.4235 79.9292C40.505 79.8927 40.578 79.8397 40.6379 79.7734L72.7765 44.4183C73.5333 43.5858 74.2263 42.7043 74.8669 41.7894H61.9544L55.0506 57.4764C54.8292 57.9782 54.1211 57.9906 53.883 57.4965L46.3427 41.7906H40.3215H33.8923C33.593 41.7906 33.3332 41.5838 33.2658 41.2922L27.3626 15.9017Z" fill="url(#paint0_linear_26_55)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_26_55" x1="40.0011" y1="-4.47446e-08" x2="38.5" y2="100.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00FFFF" />
+                                    <stop offset="1" stop-color="#00248F" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
 
                         <div className='font-bold p-2'>Heart
                         </div>
-                        <p className='border p-2 font-semibold'>Consult Now</p></div>
+                        <button onClick={() => { navigate("/hospital") }}  className='border p-2 font-semibold'>Consult Now</button></div>
                 </div>
 
             </div>
-        </div>
+        
+        
     )
 }
 
