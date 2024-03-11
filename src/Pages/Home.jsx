@@ -14,7 +14,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Navigation,Pagination } from "swiper/modules";
 import "../index.css";
-import Login from "../Components/login"
 
 const Home = () => {
   const SlideRef = useRef();
@@ -23,7 +22,7 @@ const Home = () => {
       className="  relative mx-auto flex w-11/12 max-w-maxContent flex-col 
     items-center font-mont  text-richblue-1 "
     >
-      <div className="flex items-center justify-center w-full mt-8  ">
+      <div className="flex items-center justify-center w-full mt-8 rounded-tl-2xl rounded-bl-2xl border-r-0">
         <svg
           className="border border-richblack-50"
           width="35"
@@ -41,7 +40,7 @@ const Home = () => {
           type="text"
           className=" w-full border-2 border-richblack-50 h-9 "
         ></input>
-        <CiSearch className=" h-9 w-[3%] border border-richblack-50 bg-richblack-25  " />
+        <CiSearch className=" h-9 w-[3%] border-2 border-richblack-50  rounded-tr-2xl rounded-br-2xl border-l-0   border-richblack-50 bg-richblack-25  " />
       </div>
 
       <Swiper

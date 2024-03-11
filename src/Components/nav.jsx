@@ -72,9 +72,9 @@ const Nav = () => {
               <button onClick={()=>{
                 navigate("/login")
               }}
-              className=" h-10 w-40 p-2 flex gap-x-2 items-baseline mt-1 bg-gradient-to-r from-richblue-1  to-richblue-2 text-white ">
+              className=" h-10 w-40 p-2 flex items-baseline justify-evenly font-semibold mt-1 bg-gradient-to-r from-richblue-1  to-richblue-2 text-white ">
               <IoPerson />
-              <p  >Login/SignUp <Login/></p>
+              <p>Login/SignUp</p>
               
               </button>
             </ul>

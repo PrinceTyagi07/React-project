@@ -16,7 +16,7 @@ function App() {
     <Nav></Nav> 
 
     <Routes>
-        <Route path="React-project/" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/hospital" element={<Hospital/>} />
         <Route path="/labtest" element={<Labtest />} />
