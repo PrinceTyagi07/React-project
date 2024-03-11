@@ -23,7 +23,7 @@ const Topdoctors = () => {
           Private Online consultations withverified doctors in all specialities
         </p>
       </div>
-      <Swiper
+      {/* <Swiper
         pagination={true}
         modules={[FreeMode, Pagination, Navigation, Autoplay]}
         ref={SlideRef}
@@ -37,7 +37,7 @@ const Topdoctors = () => {
         }}
       >
         <SwiperSlide>
-          <div className=" bg-richblack-300">
+          <div className=" bg-richblack-300 border-2">
             <div className="h-1/2 w-1/2 ">
               <img className=" rounded-full  " src={doc2} alt="profile" />
             </div>
@@ -46,7 +46,48 @@ const Topdoctors = () => {
         <SwiperSlide>
           <img className=" rounded-full" src={doc1} alt="profile" />
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+
+      <div className="flex space-x-32 rounded-lg shadow-2xl shadow-black  my-10 mb-16 w-full   p-2 ">
+        <div className="image">
+          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/1e/e7/af/1ee7af7a0dd863abae0af4a109422b39.jpg" alt="" />
+        </div>
+        <div className=" items-center flex flex-col w-[30%] ">
+          <h1 className="font-semibold text-xl">Top Doctors</h1>
+          <p className="font-semibold text-center text-blue-400">Private online Consultation with verified doctor in all specialist</p>
+        </div>
+        <div className="flex flex-col mt-5">
+          <button className="border-2 my-2 py-1 px-6  ">View Profile</button>
+          <button className="border-2 my-2 py-1 px-6 text-white font-semibold bg-gradient-to-r from-richblue-1  to-richblue-2 rounded-sm">Book Appointment</button>
+        </div>
+      </div>
+      <div className="flex space-x-32 rounded-lg shadow-2xl shadow-black  my-10 mb-16 w-full  p-2 ">
+        <div className="image">
+          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/1e/e7/af/1ee7af7a0dd863abae0af4a109422b39.jpg" alt="" />
+        </div>
+        <div className=" items-center flex flex-col w-[30%] ">
+          <h1 className="font-semibold text-xl">Top Doctors</h1>
+          <p className="font-semibold text-center text-blue-400">Private online Consultation with verified doctor in all specialist</p>
+        </div>
+        <div className="flex flex-col mt-5">
+          <button className="border-2 my-2 py-1 px-6  ">View Profile</button>
+          <button className="border-2 my-2 py-1 px-6 text-white font-semibold bg-gradient-to-r from-richblue-1  to-richblue-2 rounded-sm">Book Appointment</button>
+        </div>
+      </div>
+      <div className="flex space-x-32 rounded-lg shadow-2xl shadow-black  my-10 mb-16 w-full  p-2 ">
+        <div className="image">
+          <img className="rounded-lg shadow-2xl shadow-black " src="https://i.pinimg.com/236x/1e/e7/af/1ee7af7a0dd863abae0af4a109422b39.jpg" alt="" />
+        </div>
+        <div className=" items-center flex flex-col w-[30%] ">
+          <h1 className="font-semibold text-xl">Top Doctors</h1>
+          <p className="font-semibold text-center text-blue-400">Private online Consultation with verified doctor in all specialist</p>
+        </div>
+        <div className="flex flex-col mt-5">
+          <button className="border-2 my-2 py-1 px-6  ">View Profile</button>
+          <button className="border-2 my-2 py-1 px-6 text-white font-semibold bg-gradient-to-r from-richblue-1  to-richblue-2 rounded-sm">Book Appointment</button>
+        </div>
+      </div>
+
     </div>
   );
 };
