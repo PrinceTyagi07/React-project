@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { NavbarLinks } from "../Data/navbar-links";
 import logo from "../Data/logo.jpg"
 import { IoPerson } from "react-icons/io5";
+import Login from "./login"
 const Nav = () => {
   const navbarStyles = {
     // position: 'fixed',
@@ -13,6 +14,10 @@ const Nav = () => {
     // new:
     transition: "right 0.6s",
     zIndex: "10",
+  };
+  const handleclick=()=>{
+    
+  <Login/>
   };
   return (
     <div className="shadow-md" style={{ ...navbarStyles }}>
@@ -68,7 +73,7 @@ const Nav = () => {
               ))}
               <button className=" h-10 w-40 p-2 flex gap-x-2 items-baseline mt-1 bg-gradient-to-r from-richblue-1  to-richblue-2 text-white ">
               <IoPerson />
-              <p>Login/Signup</p>
+              <p onclick ={handleclick} >Login/SignUp <Login/></p>
               
               </button>
             </ul>

@@ -1,6 +1,9 @@
 import React from "react";
 import { useRef } from "react";
-import Banner from "../Components/banner";
+import Banner from "../Components/Banners/banner";
+import Banner2 from "../Components/Banners/banner2";
+import Banner3 from "../Components/Banners/banner3";
+import Banner4 from "../Components/Banners/banner4";
 import Appoint from "../Components/Appoint";
 import { CiSearch } from "react-icons/ci";
 import Consult from "../Components/Consult";
@@ -11,6 +14,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Navigation,Pagination } from "swiper/modules";
 import "../index.css";
+import Login from "../Components/login"
 
 const Home = () => {
   const SlideRef = useRef();
@@ -57,19 +61,19 @@ const Home = () => {
           <Banner />
         </SwiperSlide>
         <SwiperSlide>
-          <Banner />
+          <Banner2/>
         </SwiperSlide>
         <SwiperSlide>
-          <Banner />
+          <Banner3 />
         </SwiperSlide>
         <SwiperSlide>
-          <Banner />
+          <Banner4 />
         </SwiperSlide>
       </Swiper>
 
       <Appoint />
       <Consult />
-      
+      {/* <Login/> */}
     </div>
   );
 };
