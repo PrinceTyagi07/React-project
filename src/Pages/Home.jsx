@@ -24,9 +24,9 @@ const Home = () => {
     >
       <div className="flex items-center justify-center w-full mt-8 rounded-tl-2xl rounded-bl-2xl border-r-0">
         <svg
-          className="border border-richblack-50"
+          className=" border-richblack-50 border-2 rounded-tl-2xl rounded-bl-2xl border-r-0"
           width="35"
-          height="35"
+          height="36"
           viewBox="0 0 44 44"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const Home = () => {
           type="text"
           className=" w-full border-2 border-richblack-50 h-9 "
         ></input>
-        <CiSearch className=" h-9 w-[3%] border-2 border-richblack-50  rounded-tr-2xl rounded-br-2xl border-l-0   border-richblack-50 bg-richblack-25  " />
+        <CiSearch className=" h-9 w-[3%] border-2   rounded-tr-2xl rounded-br-2xl border-l-0   border-richblack-50 bg-richblack-25  " />
       </div>
 
       <Swiper
